@@ -1,0 +1,20 @@
+{
+  "name": "wmd_init",
+  "version": "1.0.0",
+  "description": "task for wmd's internship",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ezrastas",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.1.0"
+  }
+}

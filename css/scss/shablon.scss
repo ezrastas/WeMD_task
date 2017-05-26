@@ -1,0 +1,12 @@
+@import 'variables';
+
+.container{
+  background-color: $bgcolor;
+}
+.navbar-inverse{
+  background-color: #222;
+  color: #999;
+}
+.navbar-nav:active{
+    background-color: #444;
+}
