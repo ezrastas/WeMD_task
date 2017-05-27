@@ -18,20 +18,21 @@ while($result = mysql_fetch_assoc($MySQLRecordSet))
 {
       $total++;
 }
-echo $total; // общее количество записей
 
-// Количество страниц для пагинации
-$str_pag = ceil($total / $kol);
-?></br><?
 
-// формируем пагинацию
-for ($i = 1; $i <= $str_pag; $i++){
-  echo "<a href=table_email.php?page=".$i."> Страница ".$i." </a>";
+
+// Текущая страница
+if (isset($_POST['search'])){
+$search = $_POST['search'];
+}else $search = 1;
+
+// Определяем все количество записей в таблице
+$MySQLRecordSet = mysql_query("SELECT * FROM email where email like '%$search%'");
+while($result = mysql_fetch_assoc($MySQLRecordSet))
+{
+echo $result["email"];
+echo "</br>";
+$total++;
 }
-  $MySQLRecordSe = mysql_query("SELECT * FROM email LIMIT $art,$kol");
-  while($result = mysql_fetch_assoc($MySQLRecordSe))
-  {
-        echo $result["email"];
-        echo " ";
-  }
-  ?>
+
+?>
