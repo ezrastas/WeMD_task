@@ -1,5 +1,6 @@
 <?
   include('search.php');
+  include('db_connect.php');
   // Количество страниц для пагинации
   $str_pag = ceil($total / $kol);
 
