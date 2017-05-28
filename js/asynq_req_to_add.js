@@ -2,7 +2,7 @@ function add_email() {
  	  var msg   = $('#add_form').serialize();
         $.ajax({
           type: 'post',
-          url: 'add_email.php',
+          url: 'captcha.php',
           data: msg,
           success: function(data) {
             $('#results').html(data);
@@ -11,4 +11,5 @@ function add_email() {
 	    alert('Возникла ошибка: ' + xhr.responseCode);
           }
         });
+
     }

@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.min.css" rel="stylesheet">
-      <script src='js\asynq_req_to_add.js'></script>
+    <script src='js/asynq_req_to_add.js'></script>
   </head>
   <body>
     <div class="container">
@@ -24,7 +24,6 @@
         <?php
           echo $main;
          ?>
-
       </main>
       <footer class="footer">
         <p>© 2017 WeMD.</p>

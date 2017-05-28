@@ -17,7 +17,7 @@ var gulp = require('gulp'),
           css: 'css/scss/*.scss'
       }
 };
-
+ 
 gulp.task('build:css', function(){
   gulp.src(path.src.css)
     .pipe(concat('main.scss'))

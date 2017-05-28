@@ -9,13 +9,16 @@ $main='
 </p>
 <!--**** В текстовое поле (name="email" type="text") пользователь вводит свой email ***** -->
 <p>
+
+<div class="g-recaptcha" data-sitekey="6LfSMCMUAAAAAIDL9SVXR4G54s477wDHpRO5HCif"></div>
+<div id="results"></div>
+
 <input type="submit" name="submit" value="Подтвердить">
-<!--**** Кнопочка (type="submit") отправляет данные на страничку add_email.php ***** -->
+<!--**** Кнопка (type="submit") отправляет данные на страничку add_email.php ***** -->
 </p></form>
 
-<div class="g-recaptcha" data-sitekey="           "></div>
-<div id="results"></div>
 ';
 
 include('shablon.php');
+// include('captcha.php');
 ?>
