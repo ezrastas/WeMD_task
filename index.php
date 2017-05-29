@@ -16,7 +16,7 @@ $main='
 </form>
 
 <div id="modal_form"><!-- Сaмo oкнo -->
-      <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть -->
+      <span id="modal_close"> &times; </span> <!-- Кнoпкa зaкрыть -->
 
       <!-- Тут любoе сoдержимoе -->
       <div id="results"></div>
