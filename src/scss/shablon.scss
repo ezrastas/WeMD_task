@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&subset=cyrillic');
 @import 'variables';
+body{
+  height: 100vh;
+  font-family: 'Oswald', sans-serif;
+}
+footer{
+  padding-top: initial;
+  position: fixed;
+  bottom: 0;
+  width: inherit;
+}
 
 .container{
-  background-color: $bgcolor;
+  padding: initial;
 }
 .navbar-inverse{
   background-color: #222;
@@ -10,7 +21,61 @@
 .navbar-nav:active{
     background-color: #444;
 }
+main{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
+.form-signin {
+    max-width: 333px;
+    padding: 15px;
+    margin: 0 auto;
+    .form-signin-heading{
+      margin-bottom: 10px;
+    }
+    .form-control {
+      position: relative;
+      height: auto;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .form-control:focus {
+      z-index: 2;
+    }
+    input[type="email"] {
+      margin-bottom: 6px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .btn{
+      margin-top: 6px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//модальное окно
 #modal_form {
 	width: 300px;
 	height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */

@@ -12,13 +12,10 @@
           $_POST["g-recaptcha-response"]
       );
   }
-        if ($response != null && $response->success) {
-            include('add_email.php');
-
-                echo "oops";
-        } else {
-
-    echo "fuck this shit";
-    include('add_email.php');
-   }
+      if ($response != null && $response->success) {
+          include('add_email.php');
+      }
+      else {
+          echo "Вы не ввели Google reCAPTCHA. Пожалуйста, повторите попытку";
+      }
 ?>

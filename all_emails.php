@@ -1,7 +1,15 @@
 <?
   include('src/search.php');
   include('src/db_connect.php');
-  // Количество страниц для пагинации
+
+  // изменение цвета вкладки меню
+  $menu_active2="class='active'";
+
+  include('src/template/shablon.php');
+  echo "
+    <main>
+      <div class='container'>
+       ";
   $str_pag = ceil($total / $kol);
 
   $MySQLRecordSet = mysql_query("SELECT * FROM email where email like '%$search%' LIMIT $art,$kol");
@@ -14,6 +22,7 @@
       echo "<a href=all_emails.php?page=".$i."> Страница ".$i." </a>";
       }
   echo 'Всего: ', $total, ' записей.'; // общее количество записей
+
 ?>
   <form action="all_emails.php" method="post">
   <p>
@@ -22,3 +31,9 @@
   <p>
   <input type="submit" name="submit" value="Поиск">
   </p></form>
+
+<? echo "
+      </div class='container'>
+    <main>
+      ";
+?>
