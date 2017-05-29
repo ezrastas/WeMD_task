@@ -54,7 +54,11 @@ main{
       margin-top: 6px;
     }
 }
-
+ .all_emails{
+   max-width: 503px;
+   padding: 0px; 
+   @extend .form-signin;
+ }
 
 
 

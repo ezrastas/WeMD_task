@@ -12,7 +12,7 @@
       <header>
        <div class="nav navbar-inverse nav-justified">
          <div class="navbar-header">
-           <a class="navbar-brand" href="*">WeMakeDigital Task</a>
+           <a class="navbar-brand" href="#">WeMakeDigital Task</a>
            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" class="navbar-collapse collapse" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>

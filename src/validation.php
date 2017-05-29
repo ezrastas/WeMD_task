@@ -1,4 +1,5 @@
 <?
+//проходим по всей бд и смотрим, есть ли свопадение
   include('db_connect.php');
   $MySQLRecordSet = mysql_query('SELECT * FROM email');
   $valid = 0;
