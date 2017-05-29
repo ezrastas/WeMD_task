@@ -11,14 +11,25 @@ $main='
 <p>
 
 <div class="g-recaptcha" data-sitekey="6LfSMCMUAAAAAIDL9SVXR4G54s477wDHpRO5HCif"></div>
-<div id="results"></div>
 
 <input type="submit" name="submit" value="Подтвердить">
 <!--**** Кнопка (type="submit") отправляет данные на страничку add_email.php ***** -->
 </p></form>
 
+
+
+<div id="modal_form"><!-- Сaмo oкнo -->
+      <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть -->
+
+      <!-- Тут любoе сoдержимoе -->
+      <div id="results"></div>
+
+</div>
+<div id="overlay"></div><!-- Пoдлoжкa -->
+
+
 ';
 
-include('shablon.php');
+include('src/template/shablon.php');
 // include('captcha.php');
 ?>

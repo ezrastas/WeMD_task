@@ -12,12 +12,10 @@ var gulp = require('gulp'),
           css: 'css/'
       },
       src: { //Пути откуда брать исходники
-          html: '*.html',
-          js: 'js/js/*.*',
-          css: 'css/scss/*.scss'
+          css: 'src/scss/*.scss'
       }
 };
- 
+
 gulp.task('build:css', function(){
   gulp.src(path.src.css)
     .pipe(concat('main.scss'))

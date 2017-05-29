@@ -13,9 +13,12 @@
       );
   }
         if ($response != null && $response->success) {
-          echo "Hi " . $_POST["name"] . " (" . $_POST["email"] . "), thanks for submitting the form!";
+            include('add_email.php');
+
+                echo "oops";
         } else {
 
     echo "fuck this shit";
-   } 
+    include('add_email.php');
+   }
 ?>

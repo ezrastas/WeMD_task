@@ -1,6 +1,6 @@
 <?
-  include('search.php');
-  include('db_connect.php');
+  include('src/search.php');
+  include('src/db_connect.php');
   // Количество страниц для пагинации
   $str_pag = ceil($total / $kol);
 
@@ -22,4 +22,3 @@
   <p>
   <input type="submit" name="submit" value="Поиск">
   </p></form>
- 
