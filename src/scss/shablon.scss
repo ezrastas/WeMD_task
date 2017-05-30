@@ -136,3 +136,11 @@ main{
 #results{
   padding-top: 40px;
 }
+@media only screen and (max-width : 332px) {
+   .g-recaptcha{   transform: scale(0.77);
+-webkit-transform: scale(0.96);
+padding-top: 6px;
+transform-origin: 0 0;
+-webkit-transform-origin: 0 0;
+   }
+  }
