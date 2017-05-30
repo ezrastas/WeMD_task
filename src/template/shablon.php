@@ -46,6 +46,6 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src='../../node_modules/jquery/dist/jquery.min.js'></script>
   <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src='../../js/modal_window.js'></script>
-  <script src='../../js/asynq_req_to_add.js'></script>
+  <script src='../../js/modal_window.min.js'></script>
+  <script src='../../js/asynq_req_to_add.min.js'></script>
 </html>

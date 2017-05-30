@@ -5,14 +5,18 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
 
+    minifyJS = require('gulp-uglify'),
+
     partsHTML = require('gulp-rigger'),
 
     path = {
       build: {
-          css: 'css/'
+          css: 'css/',
+          js: 'js/'
       },
       src: { //Пути откуда брать исходники
-          css: 'src/scss/*.scss'
+          css: 'src/scss/*.scss',
+          js: 'src/js/*.js'
       }
 };
 
@@ -26,6 +30,10 @@ gulp.task('build:css', function(){
 });
 
 gulp.task('build:js', function(){
+  gulp.src(path.src.js)
+  .pipe(minifyJS())
+  .pipe(rename({suffix: '.min'}))
+.pipe(gulp.dest(path.build.js));  
 });
 
 gulp.task('build:html', function(){
